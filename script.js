@@ -48,7 +48,7 @@ if (typeof GM_info !== 'undefined' && GM_info && GM_info.script) {
     };
 }
 // Create a text node and our IIFE inside of it
-var textContent = document.createTextNode('('+ wrapper +')('+ JSON.stringify(info) +')˓→');
+let textContent = document.createTextNode('('+ wrapper +')('+ JSON.stringify(info) +')˓→');
 // Add some content to the script element
 script.appendChild(textContent);
 // Finally, inject it... wherever.
